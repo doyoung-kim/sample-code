@@ -8,7 +8,12 @@ import lombok.RequiredArgsConstructor;
 public enum CacheType {
 
 
-	CATEGORY("category");
+	CATEGORY("category"),
+	BEST10PRODUCT("product::best"),
+
+	NEW_PRODUCT("product::new"),
+	;
+
 
 	private final String name;
 	private final int expireAfterWrite;
@@ -22,8 +27,7 @@ public enum CacheType {
 	}
 
 	public static class ConstConfig {
-		public static final String KEY_CATEGORY = "category";
-		static final int DEFAULT_TTL_SEC = 3000;
+		static final int DEFAULT_TTL_SEC = 3000; // 300
 		static final int DEFAULT_MAX_SIZE = 10000;
 
 	}

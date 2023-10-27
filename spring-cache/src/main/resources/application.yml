@@ -1,6 +1,0 @@
-spring:
-  profiles:
-    active: local
-  ##### 공통 영역
-  application:
-    name: spring-cache
