@@ -1,6 +1,5 @@
 package com.sample.controller.product.dto;
 
-
 import com.sample.controller.category.dto.CategoryDto;
 import com.sample.domain.product.Product;
 import com.sample.domain.product.common.OrderStandard;
@@ -42,11 +41,11 @@ public class ProductDto {
 	public static class Response {
 
 		private Long id;
+
 		private String name;
 		private Long price;
 		private Integer stockQuantity;
 		private CategoryDto.CategoryInfo category;
-		private Integer purchaseCount;
 
 	}
 
@@ -74,19 +73,6 @@ public class ProductDto {
 		private Long categoryId;
 
 		private OrderStandard orderStandard;
-	}
-
-	@Builder
-	@Getter
-	@NoArgsConstructor
-	@AllArgsConstructor
-	public static class ProductRankingDto {
-
-		private Long id;
-		private String name;
-		private Long price;
-		private Integer stockQuantity;
-		private Integer purchaseCount;
 	}
 
 }
