@@ -1,6 +1,5 @@
 # sample-code
 
-https://osc-korea.atlassian.net/wiki/home 에서 제공하는 예제 code
 
 ## 하위 폴더만 clone 하는 방법
 sample-code 하위에 여러 프로젝트가 있는데, 그중 특정 폴더만 clone 하는 방법입니다.
